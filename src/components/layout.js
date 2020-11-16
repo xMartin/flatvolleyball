@@ -3,47 +3,44 @@ import React from "react";
 
 import Header from "./header";
 
-function Layout({ children }) {
+function Layout({ children, hideHeader }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <Header />
+    <div className={`flex flex-col min-h-screen font-sans text-gray-900 ${hideHeader ? "pt-16" : ""}`}>
+      {!hideHeader && <Header />}
 
       <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
         {children}
       </main>
 
-      <footer className="bg-blue-700">
+      <footer className="text-sm text-center pt-4 pb-4">
+        © Martin Stadler
+      </footer>
+      
+      { /*
+      <footer className="bg-gray-600">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
-            Created by{` `}
-            <a
-              className="font-bold no-underline"
-              href="https://bryant.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Taylor Bryant
-            </a>
+            © Martin Stadler
           </p>
 
           <p>
-            <a
+            <Link
+              to="/imprint"
               className="font-bold text-white no-underline"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              GitHub
-            </a>
+              Imprint
+            </Link>
           </p>
         </nav>
       </footer>
+      */ }
     </div>
   );
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  hideHeader: PropTypes.bool,
 };
 
 export default Layout;
