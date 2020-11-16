@@ -1,8 +1,6 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "flatvolleyball.com",
+  "author": "xMartin <xmartin@siarp.de>",
   "dependencies": {
     "gatsby": "2.25.3",
     "gatsby-plugin-manifest": "2.4.35",
@@ -15,12 +13,6 @@
     "react-dom": "16.14.0",
     "react-helmet": "6.1.0"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
@@ -51,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind"
+    "url": "https://github.com/xMartin/flatvolleyball"
   },
   "bugs": {
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/xMartin/flatvolleyball/issues"
   }
 }
