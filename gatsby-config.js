@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Flat Volleyball`,
+    description: `Enjoy the fun of Beach Volleyball without a net and on any surface`,
+    author: `Martin Stadler`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
