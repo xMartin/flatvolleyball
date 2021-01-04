@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import logo from "../images/logo.svg";
 import court from "../images/court.svg";
 import game from "../images/game.mp4";
+import gamePoster from "../images/game-poster.jpg";
 
 function IndexPage() {
   const { site } = useStaticQuery(graphql`
@@ -37,20 +38,21 @@ function IndexPage() {
           {site.siteMetadata.description}
         </h2>
 
-        <img
-          alt="Court dimensions"
-          className="block md:w-1/2 mx-auto mb-8 mt-8 "
-          src={court}
+        <video
+          className="block md:w-2/3 mx-auto mb-8 mt-8"
+          src={game}
+          poster={gamePoster}
+          controls
         />
 
         <p className="leading-loose">
           Beach Volleyball rules apply, but instead of the net there’s a gap between the fields.
         </p>
 
-        <video
-          className="block md:w-1/2 mx-auto mb-8 mt-8"
-          src={game}
-          controls
+        <img
+          alt="Court dimensions"
+          className="block md:w-2/3 mx-auto mb-8 mt-8 "
+          src={court}
         />
       </section>
     </Layout>
